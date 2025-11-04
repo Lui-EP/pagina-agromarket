@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroMarket - Marketplace Agrícola</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#22c55e" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="logogif.gif" alt="AgroMarket Logo">
+          <div class="logo-text">
+            <span class="empresa">AgroMarket</span>
+            <span class="slogan">Conectando Cosechas, Impulsando Negocios</span>
+          </div>
+        </div>
+
+        <!-- Switch de tema (SIEMPRE visible) -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema" type="button">
+          <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Botón hamburguesa (visible en móvil) -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" type="button">
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <!-- Links (se ocultan en móvil) -->
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#features">Características</a>
+          <a href="#how-it-works">Cómo Funciona</a>
+          <a href="login.html" class="btn-secondary">Iniciar Sesión</a>
+          <a href="registro.html" class="btn-primary">Registrarse</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Conectando Productores con Empresas</h1>
+          <p class="hero-subtitle">
+            La plataforma digital que transforma el comercio agrícola en México. Vende tu cosecha directamente a empresas interesadas.
+          </p>
+          <div class="hero-buttons">
+            <a href="registro.html" class="btn-primary btn-large">Comenzar Ahora</a>
+            <a href="#how-it-works" class="btn-secondary btn-large">Ver Cómo Funciona</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Productores</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">200+</div>
+              <div class="stat-label">Empresas</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Transacciones</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">¿Por Qué Elegir AgroMarket?</h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Conexión Directa</h3>
+            <p>Elimina intermediarios y conecta directamente con compradores verificados.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3>Precios Justos</h3>
+            <p>Tú decides el precio. Sin comisiones ocultas ni tarifas abusivas.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3>Gestión Simple</h3>
+            <p>Publica productos, gestiona pedidos y chatea con compradores en un solo lugar.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Seguro y Confiable</h3>
+            <p>Plataforma segura con verificación de usuarios y comunicación protegida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo Funciona -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">Cómo Funciona</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Regístrate</h3>
+            <p>Crea tu cuenta como productor o empresa en menos de 2 minutos.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Publica o Busca</h3>
+            <p>Productores publican sus cosechas. Empresas buscan productos.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Conecta</h3>
+            <p>Las empresas muestran interés y abren un chat directo.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Negocia</h3>
+            <p>Acuerda detalles, cantidades y cierra el trato directamente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>¿Listo para Transformar tu Negocio Agrícola?</h2>
+          <p>Únete a cientos de productores y empresas que ya están haciendo negocios en AgroMarket.</p>
+          <a href="registro.html" class="btn-primary btn-large">Registrarse Gratis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>AgroMarket</h4>
+          <p>Conectando el campo mexicano con el mercado.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces</h4>
+          <a href="#features">Características</a>
+          <a href="#how-it-works">Cómo Funciona</a>
+          <a href="login.html">Iniciar Sesión</a>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AgroMarket. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Menú lateral (hamburguesa) ===== -->
+  <aside class="sidebar" id="sidebar" aria-hidden="true">
+    <button class="close-btn" id="close-btn" aria-label="Cerrar menú" type="button">×</button>
+    <a href="#features">Características</a>
+    <a href="#how-it-works">Cómo Funciona</a>
+    <a href="login.html">Iniciar Sesión</a>
+    <a href="registro.html">Registrarse</a>
+  </aside>
+
+  <!-- Overlay -->
+  <div class="menu-overlay" id="menu-overlay" hidden></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
